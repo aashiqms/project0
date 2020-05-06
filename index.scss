@@ -1,0 +1,38 @@
+$color: orange;
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightgoldenrodyellow;
+  }
+}
+
+
+%reuse {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px;
+}
+
+.table{
+  @extend %reuse;
+  border: 1px solid black;
+}
+
+.item-1{
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: 1px solid $color;
+}
+
+.item-2{
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: 1px solid blue;
+}
