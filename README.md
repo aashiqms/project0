@@ -193,4 +193,12 @@ sass index.scss index.css
 ```command line
 sass --watch index.scss
 ```
+- we use id selector to make the home button in nav bar italic
+
+```scss
+#home{
+  font-style: italic;
+}
+```
+
 
