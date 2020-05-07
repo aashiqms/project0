@@ -15,14 +15,14 @@ $color: orange;
 %reuse {
   font-family: sans-serif;
   font-size: 18px;
-  font-weight: bold;
   padding: 20px;
   margin: 20px;
 }
 
 .table{
   @extend %reuse;
-  border: 1px solid black;
+  row-gap: 20px;
+  column-gap: 20px;
 }
 
 .item-1{
@@ -35,4 +35,12 @@ $color: orange;
   margin-bottom: 5px;
   margin-top: 5px;
   border: 1px solid blue;
+}
+
+body {
+  margin: 30px;
+}
+
+th, td{
+  border: 1px solid red;
 }
